@@ -1,0 +1,1630 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>House Pricing Information System</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <style type="text/css">
+    .carousel-caption{
+      top:50%;
+      transform: translateY(-50%);
+    }
+    .carousel-caption>.form-row>.col>label{
+      font-size: 30px;
+    }
+    
+  h1 {
+    font-size: 5vw;
+  }
+
+  </style>
+  <script src="{% static 'js/modernizr-2.7.1.js' %}"></script>
+  
+</head>
+
+<body>
+
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo"></a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#pricing" class="scroll">Pricing</a></li> -->
+            <!-- <li><a href="#">Sign in</a></li> -->
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+        <!-- header begins -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <!-- <a href="index.html"><img src="img/logo.svg" alt="Logo"></a> -->
+          </div>
+          <div class="col-xs-6 signin text-right navbar-nav">
+            <!-- <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<a href="#">Sign in</a> -->
+          </div>
+        </div>
+        
+        <div class="row header-info">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="wow fadeIn" style="text-shadow: 2px 2px rgba(0,0,0,1); color: #ffffff">The Place to find the house of your dreams!!</h1>
+            <br />
+            <p class="lead wow fadeIn" style="font-size:2vw;background: rgba(0,0,0,0.5);width:70%;margin:auto" data-wow-delay="0.5s">Ideal Houses according to your requirements and preferences and <i>BUDGET</i><br>
+             </p>
+            <br /> 
+              
+            <div class="row">
+              <!-- <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"> -->
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2">
+                <div class="row">
+                  <!-- <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s"> -->
+                    <!-- <a href="#be-the-first" class="btn btn-secondary btn-lg scroll shadow">Search</a> -->
+                  <!-- </div> -->
+                  <div class="col-xs-12 wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#invite" class="btn btn-secondary btn-lg scroll shadow">Search</a>
+                  </div>
+                </div><!--End Button Row-->  
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="mouse-icon hidden-xs">
+        <div class="scroll"></div>
+      </div>
+    
+    <section id="invite" class="pad-sm light-gray-bg" style="padding-top: 30px">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <!--<i class="fa fa-envelope-o margin-40"></i>-->
+            <h2 class="black">Enter your preferences</h2>
+            <br />
+            <!-- caraousel begins -->
+   <!-- <div class="container" style="align-content: center"> -->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false" >
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+      <li data-target="#carousel-example-2" data-slide-to="3"></li>
+      <li data-target="#carousel-example-2" data-slide-to="4"></li>
+      <li data-target="#carousel-example-2" data-slide-to="5"></li>
+      <li data-target="#carousel-example-2" data-slide-to="6"></li>
+      <!-- <li data-target="#carousel-example-2" data-slide-to="7"></li>
+       <li data-target="#carousel-example-2" data-slide-to="8"></li> 
+     -->
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    
+    <div class="carousel-inner" role="listbox">
+      <form name="MyForm" action="/parameters/" method="POST">
+            {% csrf_token %}
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" width="80%">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <!-- <h3 class="h3-responsive">Light mask</h3>
+          <p>First text</p> -->
+          <!-- <form method="POST">
+            {% csrf_token %} -->
+          <div class="form-row">
+            <div class="col">
+              <label for="location">Enter Location</label>
+              <!-- <input type="text" class="form-control" placeholder="Enter location" value=""> -->
+              <select class="form-control" id="Selectlocation" name="location" >
+              <option>Choose. .</option>
+
+<option>Electronic City Phase II</option>
+<option>Chikka Tirupathi</option>
+<option>Uttarahalli</option>
+<option>Lingadheeranahalli</option>
+<option>Kothanur</option>
+<option>Whitefield</option>
+<option>Old Airport Road</option>
+<option>Rajaji Nagar</option>
+<option>Marathahalli</option>
+<option>Gandhi Bazar</option>
+<option>7th Phase JP Nagar</option>
+<option>Gottigere</option>
+<option>Sarjapur</option>
+<option>Mysore Road</option>
+<option>Bisuvanahalli</option>
+<option>Raja Rajeshwari Nagar</option>
+<option>Ramakrishnappa Layout</option>
+<option>Manayata Tech Park</option>
+<option>Kengeri</option>
+<option>Binny Pete</option>
+<option>Thanisandra</option>
+<option>Bellandur</option>
+<option> Thanisandra</option>
+<option>Mangammanapalya</option>
+<option>Electronic City</option>
+<option>Ramagondanahalli</option>
+<option>Yelahanka</option>
+<option>Hebbal</option>
+<option>Kasturi Nagar</option>
+<option>Kanakpura Road</option>
+<option>Electronics City Phase 1</option>
+<option>Kundalahalli</option>
+<option>Chikkalasandra</option>
+<option>Murugeshpalya</option>
+<option>Sarjapur  Road</option>
+<option>Ganga Nagar</option>
+<option>HSR Layout</option>
+<option>Doddathoguru</option>
+<option>KR Puram</option>
+<option>Himagiri Meadows</option>
+<option>Adarsh Nagar</option>
+<option>Bhoganhalli</option>
+<option>Lakshminarayana Pura</option>
+<option>Begur Road</option>
+<option>Devanahalli</option>
+<option>Govindaraja Nagar Ward</option>
+<option>Tharabanahalli</option>
+<option>Varthur</option>
+<option>Bommanahalli</option>
+<option>Gunjur</option>
+<option>Devarachikkanahalli</option>
+<option>Double Road</option>
+<option>Hegde Nagar</option>
+<option>Haralur Road</option>
+<option>Hennur Road</option>
+<option>Kothannur</option>
+<option>Kalena Agrahara</option>
+<option>Cholanayakanahalli</option>
+<option>Kaval Byrasandra</option>
+<option>ISRO Layout</option>
+<option>Kodanda Reddy Layout</option>
+<option>Garudachar Palya</option>
+<option>EPIP Zone</option>
+<option>Dasanapura</option>
+<option>Kasavanhalli</option>
+<option>Sanjay nagar</option>
+<option> Mysore Highway</option>
+<option>Domlur</option>
+<option>Sarjapura - Attibele Road</option>
+<option>Devasthanagalu</option>
+<option>T Dasarahalli</option>
+<option>Yeshwanthpur</option>
+<option>Chandapura</option>
+<option>Green View Layout</option>
+<option>Shantiniketan Layout</option>
+<option>Peenya</option>
+<option>Nagarbhavi</option>
+<option>Jalahalli West</option>
+<option>Lakshmiamma Garden</option>
+<option>Byatarayanapura</option>
+<option>Ramamurthy Nagar</option>
+<option>Malleshwaram</option>
+<option>Akshaya Nagar</option>
+<option>Shampura</option>
+<option>Kadugodi</option>
+<option>LB Shastri Nagar</option>
+<option>Vajarahalli</option>
+<option>Hormavu</option>
+<option>Vishwapriya Layout</option>
+<option>Ramaswamy Palya - Kammanahalli Main Road</option>
+<option>Kudlu Gate</option>
+<option>8th Phase JP Nagar</option>
+<option>Bommasandra Industrial Area</option>
+<option>Chandra Layout</option>
+<option>Anandapura</option>
+<option>Vishveshwarya Layout</option>
+<option>Kengeri Satellite Town</option>
+<option>Basavanapura</option>
+<option>Dinnur</option>
+<option>Kannamangala</option>
+<option> Devarachikkanahalli</option>
+<option>Sanjeevini Nagar</option>
+<option>Hulimavu</option>
+<option>Mahalakshmi Layout</option>
+<option>Yarandahalli</option>
+<option>Hosa Road</option>
+<option>Keshava Nagar</option>
+<option>RMV Extension</option>
+<option>Tejaswini Nagar</option>
+<option>Jai Bheema Nagar</option>
+<option>Kothnur Narayanapura</option>
+<option>Attibele</option>
+<option>CV Raman Nagar</option>
+<option>CHIKKATIRUPATHI</option>
+<option>Kumaraswami Layout</option>
+<option>Nagavara</option>
+<option>Hebbal Kempapura</option>
+<option>Vijayanagar</option>
+<option>8th block Koramangala</option>
+<option>Jakkuru Layout</option>
+<option>Pattandur Agrahara</option>
+<option>Ejipura</option>
+<option>MS Pallya</option>
+<option>Nagasandra</option>
+<option>Langford Town</option>
+<option>Kogilu</option>
+<option>Panathur</option>
+<option>Nagondanahalli</option>
+<option>Padmanabhanagar</option>
+<option>1st Block Jayanagar</option>
+<option>Kammasandra</option>
+<option>Off Sarjapur Road, </option>
+<option>Tala Cauvery Layout</option>
+<option>Dasarahalli</option>
+<option>Magadi Road</option>
+<option>Ngef Layout</option>
+<option>Koramangala</option>
+<option>Lakshminarayanapura, Electronic City Phase 2</option>
+<option>Muthurayya Swamy Layout</option>
+<option>Dommasandra</option>
+<option>Budigere</option>
+<option>Dodda Nekkundi Extension</option>
+<option>Mylasandra</option>
+<option>Kalyan nagar</option>
+<option>Dr Shivarama Karantha Nagar</option>
+<option>Bank Of Baroda Colony</option>
+<option>Kullappa Colony</option>
+<option>Mukkutam Nagar</option>
+<option>Ashwath Nagar</option>
+<option>Ncpr Industrial Layout</option>
+<option>Meenakunte</option>
+<option>OMBR Layout</option>
+<option>Anand Nagar</option>
+<option>Shree Ananth Nagar Layout</option>
+<option>Kundalahalli Colony</option>
+<option>Horamavu Agara</option>
+<option>MCECHS  layout</option>
+<option>Coffee Board Layout</option>
+<option>Ambedkar Nagar</option>
+<option>KUDLU MAIN ROAD</option>
+<option>Geleyara Balaga Layout</option>
+<option>Talaghattapura</option>
+<option>Sundara Nagar</option>
+<option>Balagere</option>
+<option>Jigani</option>
+<option>Gollarapalya Hosahalli</option>
+<option>Srirampura</option>
+<option>Old Madras Road</option>
+<option>Kaggadasapura</option>
+<option>Silver Springs Layout</option>
+<option>9th Phase JP Nagar</option>
+<option>Jakkur</option>
+<option>TC Palaya</option>
+<option>Maruthi Sevanagar</option>
+<option>RMV 2nd Stage</option>
+<option>Giri Nagar</option>
+<option>Singasandra</option>
+<option>AECS Layout</option>
+<option>Mallasandra</option>
+<option>Begur</option>
+<option>JP Nagar</option>
+<option>Sunder Ram Shetty Nagar</option>
+<option>Malleshpalya</option>
+<option>Kodathi</option>
+<option>Munnekollal</option>
+<option>Motappa Layout</option>
+<option>Akshaya Vana</option>
+<option>Kaggalipura</option>
+<option>Basavanna Nagar</option>
+<option>6th Phase JP Nagar</option>
+<option>Ulsoor</option>
+<option>Thigalarapalya</option>
+<option>Somasundara Palya</option>
+<option>T.C PALYA</option>
+<option>Muneshwara Nagar</option>
+<option>Basaveshwara Nagar</option>
+<option>Bull Temple Road</option>
+<option>Bommasandra</option>
+<option>Prashanth Nagar</option>
+<option>Suragajakkanahalli</option>
+<option>Ardendale</option>
+<option>Harlur</option>
+<option>Sampigehalli</option>
+<option>RMV</option>
+<option>Banashankari3rd stage bigbazar</option>
+<option>Bagalur Main Road</option>
+<option>Kodihalli</option>
+<option>Narayanapura</option>
+<option>Binny Mills Employees Colony</option>
+<option>Bannerghatta Road</option>
+<option>Hennur</option>
+<option>5th Phase JP Nagar</option>
+<option>Kodigehaali</option>
+<option>Gopalapura</option>
+<option>Billekahalli</option>
+<option>Jalahalli</option>
+<option>Mahadevpura</option>
+<option>Anekal</option>
+<option>Hoodi Circle, </option>
+<option>Sompura</option>
+<option>Ashirvad Colony</option>
+<option>Dodda Nekkundi</option>
+<option>K N Extension</option>
+<option>Hosur Road</option>
+<option>Battarahalli</option>
+<option>Gokula Extension</option>
+<option>Kamakshipalya</option>
+<option>Sultan Palaya</option>
+<option>Sanne Amanikere</option>
+<option>Amco Colony</option>
+<option>Ambalipura</option>
+<option>Hoodi</option>
+<option>Samethanahalli</option>
+<option>Brookefield</option>
+<option>Yelenahalli</option>
+<option>Richmond Town</option>
+<option>Suddaguntepalya</option>
+<option>Udayapur Village</option>
+<option>Vittasandra</option>
+<option>Thippasandra</option>
+<option>Chikkabidarakallu</option>
+<option>1 Giri Nagar</option>
+<option>Hoysalanagar</option>
+<option>Defence Colony</option>
+<option>2nd Stage Nagarbhavi</option>
+<option>Vidyaranyapura</option>
+<option>Amruthahalli</option>
+<option>ITI Employees Layout</option>
+<option>Kodigehalli</option>
+<option>Patelappa Layout</option>
+<option>Ring Road Nagarbhavi</option>
+<option>NS Palya</option>
+<option>Subramanyapura</option>
+<option>Basavangudi</option>
+<option>Kenchenahalli</option>
+<option>3rd Block Hrbr Layout</option>
+<option>Bank Avenue</option>
+<option>Surabhi Layout</option>
+<option>Banjara Layout</option>
+<option>Omkar Nagar</option>
+<option>Kereguddadahalli</option>
+<option>Maragondanahalli</option>
+<option>Silk Board</option>
+<option>Kada Agrahara</option>
+<option>Kambipura</option>
+<option>BHEL Layout</option>
+<option>Medahalli</option>
+<option>Banashankari Stage III</option>
+<option>Kashi Nagar</option>
+<option>Sector 7 HSR Layout</option>
+<option>Yemlur, Old Airport Road, </option>
+<option>VHBCS Layout</option>
+<option>Ittamadu</option>
+<option>Rajiv Nagar</option>
+<option>Gattahalli</option>
+<option>Arekere</option>
+<option>Ramanjaneyanagar</option>
+<option>Mico Layout</option>
+<option>7th Block Jayanagar</option>
+<option>2nd Phase JP Nagar</option>
+<option>Kammanahalli</option>
+<option>K G Colony</option>
+<option>Banashankari</option>
+<option>Herohalli</option>
+<option>Chikkabanavar</option>
+<option>HRBR Layout</option>
+<option>Ashwini layout</option>
+<option>Marathalli bridge</option>
+<option>Dooravani Nagar</option>
+<option>JCR Layout</option>
+<option>Nehru Nagar</option>
+<option>Kanakapura</option>
+<option>Papareddipalya</option>
+<option>Venkatapura</option>
+<option>Sneha Colony</option>
+<option>Konanakunte</option>
+<option>Hosapalya</option>
+<option>Doddagubbi</option>
+<option>Sector 6 HSR Layout</option>
+<option>Margondanahalli</option>
+<option>ITI Layout</option>
+<option>R.T. Nagar</option>
+<option>Tumkur Road</option>
+<option>Vasanthapura</option>
+<option>Hosahalli</option>
+<option>GM Palaya</option>
+<option>near Ramanashree California resort</option>
+<option>6th block banashankari 3rd stage, 100 feet ORR</option>
+<option>Jalahalli East</option>
+<option>Poornapragna Housing Society Layout</option>
+<option>Hosakerehalli</option>
+<option>Huskur</option>
+<option>Indira Nagar</option>
+<option>Shanthala Nagar</option>
+<option>Teachers Colony</option>
+<option>Bettahalsoor</option>
+<option>Srinivasa Nagar</option>
+<option>Sulthangunta</option>
+<option>Byrathi Village</option>
+<option>Kodichikkanahalli</option>
+<option>Ambedkar Colony</option>
+<option>Varthur Road</option>
+<option>Anjappa Layout</option>
+<option>Avalahalli</option>
+<option>Prakruthi Nagar</option>
+<option>Sadaramangala</option>
+<option>Anjanapura</option>
+<option>Abbigere</option>
+<option>Tindlu</option>
+<option>B Narayanapura</option>
+<option>Green Garden Layout</option>
+<option>Gubbalala</option>
+<option>Dairy Circle</option>
+<option>Parappana Agrahara</option>
+<option>Jeevan bima nagar</option>
+<option>Narayana Nagar 1st Block</option>
+<option>KSRTC Layout</option>
+<option>P&T Colony</option>
+<option>Cunningham Road</option>
+<option>New Gurappana Palya</option>
+<option>Chelekare</option>
+<option>Palanahalli</option>
+<option>Vadarpalya</option>
+<option>Kudlu</option>
+<option>Shivanagar</option>
+<option>V.V Puram</option>
+<option>Sector 3 HSR Layout</option>
+<option>Banashankari Stage VI</option>
+<option>HMT Layout</option>
+<option>Basavanagara</option>
+<option>Cox Town</option>
+<option>Kalasipalya</option>
+<option>Kathriguppe</option>
+<option>HBR Layout</option>
+<option>4 Bedroom Farm House in Bagalur</option>
+<option>Yelahanka New Town</option>
+<option>Sahakara Nagar</option>
+<option>manyata park</option>
+<option>Rachenahalli</option>
+<option>Belathur</option>
+<option>Sadashiva Nagar</option>
+<option>Yelachenahalli</option>
+<option>Shirdi Sai Layout</option>
+<option>Kodbisanhalli</option>
+<option>Sathya Sai Layout</option>
+<option>Indiranagar HAL 2nd Stage</option>
+<option>Vishwanatha Nagenahalli</option>
+<option>Singapura Village</option>
+<option>Bendiganahalli</option>
+<option>Hosakerehalli Layout</option>
+<option>Hennagara</option>
+<option>Ferrar Nagar</option>
+<option>Green Glen Layout</option>
+<option>BAGUR</option>
+<option>Thubarahalli</option>
+<option>M.G Road</option>
+<option>Naganathapura</option>
+<option>Horamavu Banaswadi</option>
+<option>1st Phase JP Nagar</option>
+<option>Kaverappa Layout</option>
+<option>NGR Layout</option>
+<option>Divya Unnathi Layout</option>
+<option>Vasantha Vallabha Nagar</option>
+<option>sapthagiri Layout</option>
+<option>Seegehalli</option>
+<option>BEML Layout</option>
+<option>Alur</option>
+<option>Devarabisanahalli</option>
+<option>NRI Layout</option>
+<option>Sidedahalli</option>
+<option>Dwarka Nagar</option>
+<option>ITPL</option>
+<option>Thurahalli</option>
+<option>Hallehalli</option>
+<option>Kattigenahalli</option>
+<option>Marathi Layout</option>
+<option>Weavers Colony</option>
+<option>Raghavendra Nagar</option>
+<option>KR Layout</option>
+<option>Babusapalaya</option>
+<option>Nagappa Reddy Layout</option>
+<option>Kempapura</option>
+<option>BTM 1st Stage</option>
+<option>Kariyammana Agrahara</option>
+<option>Hessarghatta</option>
+<option>Binnamangala</option>
+<option>Suraksha Nagar</option>
+<option>Lakshmi Layout</option>
+<option>Iblur Village</option>
+<option>Kadugondanahalli</option>
+<option>Basava Nagar</option>
+<option>2nd Block Hrbr Layout</option>
+<option>Ananth Nagar</option>
+<option>Canara Bank Layout</option>
+<option>Narasapura</option>
+<option>Manjunath Nagar</option>
+<option>Basapura</option>
+<option>Channasandra</option>
+<option>Singena Agrahara</option>
+<option>Sector 1 HSR Layout</option>
+<option>Mango Garden Layout</option>
+<option>Kacharakanahalli</option>
+<option>Bidere Agarahara, Behind Safal market</option>
+<option>Grihalakshmi Layout</option>
+<option>Gopalkrishna Nagar</option>
+<option>Choodasandra</option>
+<option>Sai Gardens</option>
+<option>Dodda Kempaiah Layout</option>
+<option>Hanumanth Nagar</option>
+<option>Kaikondrahalli</option>
+<option>Hunasamaranahalli</option>
+<option>RWF West Colony</option>
+<option>Bileshivale</option>
+<option>Neeladri Nagar</option>
+<option>Frazer Town</option>
+<option>Williams Town</option>
+<option>Jaya Nagar East</option>
+<option>Iggalur</option>
+<option>Cooke Town</option>
+<option>Doddakallasandra</option>
+<option>Chokkanahalli</option>
+<option>Chikkaballapur</option>
+<option>Chamrajpet</option>
+<option>VGP Layout</option>
+<option>Classic Paradise Layout</option>
+<option>Byappanahalli</option>
+<option>Vasanth nagar</option>
+<option>Rayasandra</option>
+<option>Kalkere</option>
+<option>T.C. Palya</option>
+<option>Siddapura</option>
+<option>Makali</option>
+<option>Vibuthipura</option>
+<option>5th Block Hbr Layout</option>
+<option>Pai Layout</option>
+<option>Defence Layout</option>
+<option>Roopena Agrahara</option>
+<option>Banashankari Stage V</option>
+<option>Coconut Garden</option>
+<option>Gollahalli</option>
+<option>Sonnenahalli</option>
+<option>D Souza Layout</option>
+<option>ECC Road, Whitefield, </option>
+<option>Seetharampalya</option>
+<option>Rukmaiah Layout</option>
+<option>Devanahalli Int. Airport</option>
+<option>Puttanahalli</option>
+<option>Benson Town</option>
+<option>Devasandra Extension</option>
+<option>2nd Phase Judicial Layout</option>
+<option>1st Block HRBR Layout</option>
+<option>Sarjapur Road, </option>
+<option>Byadarahalli</option>
+<option>Poorna Pragna Layout</option>
+<option>Judicial Layout</option>
+<option>Varthur Road, </option>
+<option>Chikka Banaswadi</option>
+<option>Outer Ring Road East</option>
+<option>Kavika Layout</option>
+<option>Vinayaka Nagar</option>
+<option>Banashankari Stage II</option>
+<option>Hennur Busstop</option>
+<option>GB Palya</option>
+<option>AMS Layout</option>
+<option>9th Block Jayanagar</option>
+<option>Karuna Nagar</option>
+<option>Ashwathnagar</option>
+<option>Gaurava Nagar</option>
+<option>Kengeri Satellite Town ( BDA SITE)</option>
+<option>AGS Layout</option>
+<option>Srinagar</option>
+<option>Brigade Road</option>
+<option>Bannerghatta</option>
+<option>Maruthi HBCS Layout</option>
+<option>Devanahalli Road</option>
+<option>Green Woods Layout</option>
+<option>Craig Park Layout</option>
+<option>Immadihalli</option>
+<option>Banagiri Nagar</option>
+<option>Hiremath Layout</option>
+<option>Jnanabharathi Layout</option>
+<option>Chikkasandra</option>
+<option>Bharath Housing Society Layout</option>
+<option>3rd Block Jayanagar</option>
+<option>Manjunatha Layout</option>
+<option>Konanakunte Cross</option>
+<option>Abbaiah Reddy Layout</option>
+<option>Tavarekere</option>
+<option>Thirumenahalli</option>
+<option>KPC Layout</option>
+<option>HOSUR MAIN ROAD</option>
+<option>Nandi Durga Road</option>
+<option>Kumara Park</option>
+<option>Daadys Gaarden Layout</option>
+<option>Maruthi Nagar</option>
+<option>Marsur</option>
+<option>Kallumantapa</option>
+<option>Malimakanapura</option>
+<option>Rustam Bagh Layout</option>
+<option>New Thippasandra</option>
+<option>Garden Layout</option>
+<option>Viswapriyanagar.begur Road.bommanahalli.</option>
+<option>T K Reddy Layout</option>
+<option>Kumbena Agrahara</option>
+<option>Pai layout , Mahadevapura</option>
+<option>frazertown</option>
+<option>Akshayanagara East</option>
+<option>Doddanekundi</option>
+<option>Venkatadri Layout</option>
+<option>Bommenahalli</option>
+<option>Mahaganapathy Nagar</option>
+<option>Andrahalli</option>
+<option>Vittal Nagar</option>
+<option>2Electronic City Phase II</option>
+<option>3rd Block Banashankari</option>
+<option>Bhuvaneshwari Nagar</option>
+<option>Kadarenahalli</option>
+<option>Laggere</option>
+<option>Victoria Layout</option>
+<option>Prithvi Layout</option>
+<option>Subramanyanagar</option>
+<option>1 Ramamurthy Nagar</option>
+<option>5th Stage BEML Layout</option>
+<option>IVC Road</option>
+<option>Jaya Mahal layout</option>
+<option>BSM Extension</option>
+<option>Vijinapura</option>
+<option>Banaswadi</option>
+<option>P&T Layout</option>
+<option>Byrasandra</option>
+<option>SBM Colony</option>
+<option>Veerannapalya</option>
+<option>Chowdeshwari Layout</option>
+<option>Mathikere Extension</option>
+<option>Sector 2 HSR Layout</option>
+<option>Anantapura</option>
+<option>Shivaji Nagar</option>
+<option>Badavala Nagar</option>
+<option>4th Block Koramangala</option>
+<option>Belatur</option>
+<option>Lalbagh Road</option>
+<option>Kamakya Layout</option>
+<option>Vignana Nagar</option>
+<option>Nallurhalli</option>
+<option>Chinnapanahalli</option>
+<option>Lingarajapuram</option>
+<option>3rd Block HBR Layout</option>
+<option>Laxmi Sagar Layout</option>
+<option>Nelamangala</option>
+<option>Nagavarapalya</option>
+<option>Hongasandra</option>
+<option>Harappanahalli</option>
+<option>BTM Layout</option>
+<option>Chennammana Kere</option>
+<option>Kanaka Nagar</option>
+<option>Tasker Town</option>
+<option>Govindpura</option>
+<option>NR Colony</option>
+<option>Agara Village</option>
+<option>Shettigere</option>
+<option>Kenchanehalli R R Nagar</option>
+<option>BEL Road</option>
+<option>Byagadadhenahalli</option>
+<option>Doddabommasandra</option>
+<option>Maruthi Layout</option>
+<option>Sree Narayana Nagar</option>
+<option>Tunganagara</option>
+<option>BTM 2nd Stage</option>
+<option>Remco Bhel Layout</option>
+<option>Chokkasandra</option>
+<option>Panduranga Nagar</option>
+<option>Sri Venkateshpura Layout</option>
+<option>Jakkur Plantation</option>
+<option>Sir M V Nagar</option>
+<option>Bikasipura</option>
+<option>Basaveshwara Nagar Yelahanka</option>
+<option>1st Block Koramangala</option>
+<option>Hoskote</option>
+<option>Attiguppe</option>
+<option>Srirampuram</option>
+<option>Yemlur</option>
+<option>Race Course Road</option>
+<option>Gkvk Layout</option>
+<option>St. John's Road</option>
+<option>Doopanahalli</option>
+<option>Doddaballapur</option>
+<option>Sathanur</option>
+<option>Ramamohanapuram</option>
+<option>kanakapura road</option>
+<option>Kaveri Nagar</option>
+<option>Sundar Ram Shetty Nagar</option>
+<option>Kirloskar layout, Basaveshwarnagar</option>
+<option>Alfa Garden Layout</option>
+<option>Gowdanapalya</option>
+<option>Hoodi Layout</option>
+<option>Gaundanapalya</option>
+<option>Arasanakunte</option>
+<option>5th block Koramangala</option>
+<option>JakkurYelahanka</option>
+<option>Gunjur Palya</option>
+<option>Upkar Layout</option>
+<option>Sunkadakatte</option>
+<option>Someshwara Layout</option>
+<option>Kathreguppe</option>
+<option>Channasandra Layout</option>
+<option>HAL 3rd Stage</option>
+<option>Doctors Layout</option>
+<option>Austin Town</option>
+<option>Rajagopala Nagar</option>
+<option>Vishwapriya Nagar</option>
+<option>Sarakki Nagar</option>
+<option>Bahubali Nagar</option>
+<option>Lottegolla Halli</option>
+<option>Nandini Layout</option>
+<option>Vibhutipura Extension</option>
+<option>B Channasandra</option>
+<option>Dollars Colony</option>
+<option>Arehalli</option>
+<option>Cambridge  road</option>
+<option>Hennur Gardens</option>
+<option>Thyagaraja Nagar</option>
+<option>Howthinarayanappa Garden</option>
+<option>Bharathi Nagar</option>
+<option>SRINIVASAPURA</option>
+<option>Cambridge Layout</option>
+<option> ittamadu</option>
+<option>Doddakannelli</option>
+<option>Pulkeshi Nagar</option>
+<option>Thanisandra Main Road, </option>
+<option>Jayanagar</option>
+<option> Bhoganhalli</option>
+<option>Kumbalgodu</option>
+<option>banashankari stage iii sa</option>
+<option>Amruthnagar</option>
+<option>Palace Guttahalli</option>
+<option>Akshya Nagar</option>
+<option> Anekal</option>
+<option>BCC Layout</option>
+<option>Mathikere</option>
+<option>Friends Colony</option>
+<option>Doddabidrakallu</option>
+<option>Sri Balaji Krupa Layout</option>
+<option>Bidadi</option>
+<option>Sampige Layout</option>
+<option>Virgonagar</option>
+<option>Dodsworth Layout</option>
+<option>Kudlu Village, </option>
+<option>Rajiv Gandhi Nagar</option>
+<option>Kurubarahalli</option>
+<option>Sector 4 HSR Layout</option>
+<option>Bhagyalakshmi Avenue</option>
+<option>Kengeri Hobli</option>
+<option>Vyalikaval</option>
+<option>Banaswadi, </option>
+<option>Balaji Gardens Layout</option>
+<option>Thavarekere</option>
+<option>HAL 2nd Stage</option>
+<option> Devarabeesana Halli</option>
+<option> Rachenahalli</option>
+<option>Tippenahalli</option>
+<option>Prestige Sunrise</option>
+<option>1st Stage Indira Nagar</option>
+<option>Srigandada Kaval</option>
+<option>Viswajit Layout</option>
+<option>Adityanagar</option>
+<option>BDS Layout</option>
+<option>Shanthi Layout</option>
+<option>Esther Enclave Layout</option>
+<option>Volagerekallahalli</option>
+<option>Keerthi Layout</option>
+<option>Ganga Nagar Extension</option>
+<option>Shikaripalya</option>
+<option>Huttanahalli</option>
+<option>Reliable Woods Layout</option>
+<option>4th T block Jayanagar</option>
+<option>Nayandanahalli</option>
+<option>Hagadur</option>
+<option>Popular Colony</option>
+<option>Soundarya Layout</option>
+<option>Banashankari 6th Stage ,Subramanyapura</option>
+<option>Amarjyothi Colony</option>
+<option>Pattanagere</option>
+<option>Dollars Layout</option>
+<option>Chikkabettahalli</option>
+<option>Bhuvaneswari Nagar</option>
+<option>Varanasi</option>
+<option>Gopal Reddy Layout</option>
+<option>sankeswari</option>
+<option>T c palya</option>
+<option>Govindraja Nagar</option>
+<option>Virat Nagar</option>
+<option>Chennammanakere Achukattu</option>
+<option>Maragondana Halli, kr puram, old madras road</option>
+<option>Dhanalakshmi Layout</option>
+<option>Jp nagar 8th Phase .</option>
+<option>Nobo Nagar</option>
+<option>Kadubeesanahalli</option>
+<option>J P Nagar 7th Phase Ramayya City</option>
+<option>Green Domain Layout</option>
+<option>Cleveland Town</option>
+<option>Syndicate Bank Colony</option>
+<option>M C Layout</option>
+<option>Nanjappa Layout</option>
+<option>Dodda Banaswadi</option>
+<option>BEL Layout</option>
+<option>Sri Kanteshwara Nagar</option>
+<option>Bellari Road</option>
+<option>Jyothi Nagar</option>
+<option>Tata Nagar</option>
+<option>RK Layout 2nd Stage</option>
+<option>Tirumanahalli</option>
+<option>Raghuvanahalli</option>
+<option>Geddalahalli</option>
+<option>Brindavan Nagar</option>
+<option>Mariyannapalya</option>
+<option>Palace Road</option>
+<option>Pulikeshi Nagar</option>
+<option>Domlur Layout</option>
+<option>Vijaya Bank Layout</option>
+<option>Narayanappa Layout</option>
+<option>1Hanuman Nagar</option>
+<option>Wilson Garden</option>
+<option>Kumbhena Agrahara</option>
+<option>Challaghatta</option>
+<option>Nyanappana Halli</option>
+<option>Indira Nagar 3rd Stage</option>
+<option>KR Garden</option>
+<option>Kanakadasa Layout</option>
+<option>Mallathahalli</option>
+<option>Jayamahal Extension</option>
+<option>Laxminarayana Layout</option>
+<option>Sahyadri Layout</option>
+<option>Mathikere SBM colony</option>
+<option>white field,kadugodi</option>
+<option>Bagalur</option>
+<option>Vinayak Nagar</option>
+<option>P Krishnappa Layout</option>
+<option>Crimson Layout</option>
+<option>Hanumantha Nagar</option>
+<option>Bagalakunte</option>
+<option>Lavelle Road</option>
+<option>Goraguntepalya</option>
+<option>Rajankunte</option>
+<option>6th Block Rajaji Nagar</option>
+<option>MLA Layout</option>
+<option>Koramangala Industrial Layout</option>
+<option>Kyalasanahalli</option>
+<option>Nagadevanahalli</option>
+<option>Madiwala</option>
+<option>Rajarajeshwari Nagara</option>
+<option>Celebrity Paradise Layout</option>
+<option>St Thomas Town</option>
+<option>Ckikkakammana Halli</option>
+<option>Banashankari 2nd Stage</option>
+<option>Munivenkatppa Layout</option>
+<option>Kamala Nagar</option>
+<option>Kumarapalli</option>
+<option>Marenahalli</option>
+<option>Nagawara Junction</option>
+<option>Maithri Layout</option>
+<option>Raja Rajeshwari Nagar 5th Stage</option>
+<option>Nanjappa Garden</option>
+<option>Vayunandana Layout</option>
+<option>Geetanjali Layout</option>
+<option>Kenchenhalli</option>
+<option>EPIP AREA, WHITEFIELD</option>
+<option>1st Stage Domlur</option>
+<option>RMV extension stage 2, rmv extension</option>
+<option>Kalhalli</option>
+<option>Hadosiddapura</option>
+<option>Vijaya Bank Colony</option>
+<option>Lakkasandra</option>
+<option>JP Nagar 8th Phase, </option>
+<option>Kachanayakanahalli</option>
+<option>Nagaraja Garden</option>
+<option>1 Annasandrapalya</option>
+<option>6th block Koramangala</option>
+<option>JP nagar 9th Phase, </option>
+<option>4th Block Jayanagar</option>
+<option>Kuvempu Nagar</option>
+<option>Karnataka Shabarimala</option>
+<option>Canara Bank Colony</option>
+<option>Hanumagiri</option>
+<option>Seshadripuram</option>
+<option>Akshayanagara West</option>
+<option>Prasanth Extension</option>
+<option>Chikkathoguru</option>
+<option>West of Chord Road</option>
+<option>Junnasandra</option>
+<option>Handenahalli</option>
+<option>manyata tech park</option>
+<option>Sarvabhouma Nagar</option>
+<option>SMV layout</option>
+<option>CQAL LAYOUT C BLOCK</option>
+<option>Near Electronic City, </option>
+<option>Banashankari stage 2</option>
+<option>Doddanakundi Industrial Area 2</option>
+<option>OLd Gurappanapalya</option>
+<option>Chikkadunnasandra</option>
+<option>Indranagar  100ft road defence colony</option>
+<option>Wajid layout thanisandra</option>
+<option>Achins Road</option>
+<option>Uvce Layout</option>
+<option>Gattigere</option>
+<option>Cottonpet</option>
+<option>singapura paradise</option>
+<option>Kannur</option>
+<option>Sampangi Rama Nagar</option>
+<option>BEML Layout 5th stage</option>
+<option>Pragathi Nagar</option>
+<option>Ramesh Nagar</option>
+<option>A Narayanapura</option>
+<option>Amblipura</option>
+<option>Rajarajeshwari nagar</option>
+<option>Rajarajeshwarinagar</option>
+<option>Jinkethimmanahalli</option>
+<option>Vimanapura</option>
+<option>1st Stage Radha Krishna Layout</option>
+<option>Bapuji Layout</option>
+<option>Vasantapura main road</option>
+<option>CQAL Layout</option>
+<option>Venugopal Reddy Layout</option>
+<option>Lake City</option>
+<option>Lakshmipura</option>
+<option>Old Town</option>
+<option>Okalipura</option>
+<option>Maruthi Extension</option>
+<option>Vidyapeeta</option>
+<option>Meenakshi Layout</option>
+<option>S R Layout</option>
+<option>GD Layout</option>
+<option>Kithaganur</option>
+<option>Shirdi Sai Nagar</option>
+<option>JP Nagar 7th Phase, </option>
+<option>J C Nagar</option>
+<option>Sadduguntepalya</option>
+<option>Doddakammanahalli</option>
+<option>Bidrahalli</option>
+<option>Medi Agrahara</option>
+<option>whitefiled</option>
+<option>Subbannaiah Palya</option>
+<option>N R Layout</option>
+<option>Richards Town</option>
+<option>Manorayana Palya</option>
+<option>Madanayakahalli</option>
+<option>Mahalakshmi Puram</option>
+<option>Jaladarsini Layout</option>
+<option>Attur Layout</option>
+<option>Brooke Bond First Cross</option>
+<option>Glass Factory Layout</option>
+<option>Milk Colony</option>
+<option>Basnashankari,6th stage,</option>
+<option>Near ullas theater</option>
+<option>Chikkakannalli</option>
+<option>Yeshwanthpur Industrial Suburb</option>
+<option>Nandi Hills</option>
+<option>Thanisandra main road</option>
+<option>Saptagiri Layout</option>
+<option>Doddabanahalli</option>
+<option> Electronic City</option>
+<option>Vijayabank bank layout</option>
+<option>D Group Employees Layout</option>
+<option>Hosahalli Extension</option>
+<option>1Channasandra</option>
+<option>Whitefield, </option>
+<option>Kempegowda Nagar</option>
+<option>Vaderahalli</option>
+<option>4th Phase JP Nagar</option>
+<option>K R C kothanur</option>
+<option>2nd Block Jayanagar</option>
+<option>Singanayakanahalli</option>
+<option>Udaya Nagar</option>
+<option> Whitefield</option>
+<option>Vaishnavi Layout</option>
+<option>Housing Board Layout Vijay Nagar</option>
+<option>Thomas Town</option>
+<option>Manganahalli</option>
+<option>Indra Nagar</option>
+<option>Ilyas Nagar</option>
+<option>3rd Phase JP Nagar</option>
+<option>kanakapura main road</option>
+<option>Reliaable Tranquil Layout</option>
+<option>Mailasandra</option>
+<option>Basvasamithi Layout Vidyaranyapura</option>
+<option>8th Block Jayanagar</option>
+<option>Atmananda Colony</option>
+<option>Baba Nagar</option>
+<option>Badrappa Layout</option>
+<option>Lal Bahadur Shastri Nagar</option>
+<option>Puttappa Layout</option>
+<option>Ananthanagar Phase 1,Electronic City , phase 2</option>
+<option>Bethel Nagar</option>
+<option>Kirloskar Layout</option>
+<option>tc.palya</option>
+<option>Dollar Scheme Colony</option>
+<option>Omarbagh Layout</option>
+<option>anjananager magdi road</option>
+<option>Kodipalya</option>
+<option>Aishwarya Crystal Layout</option>
+<option>DUO Layout</option>
+<option>Srinivas Colony</option>
+<option>Moodalapalya</option>
+<option>Gokaula Extension</option>
+<option>Subash Nagar</option>
+<option>RTO ullalu</option>
+<option>Carmelaram</option>
+<option>Hennur Bande</option>
+<option>ravindra nagar, T.dasarahalli peenya</option>
+<option>1st Block BEL Layout</option>
+<option>Prakruthi Township</option>
+<option>Bennigana Halli</option>
+<option>Seethappa Layout</option>
+<option>Langford Gardens</option>
+<option>Bellandur, </option>
+<option>Marasandra</option>
+<option>Kalkere Channasandra</option>
+<option>Shakthi Nagar</option>
+<option>Ullal Uppanagar</option>
+<option> south</option>
+<option>Rainbow Drive</option>
+<option>3rd Block Koramangala</option>
+<option>Jakkasandra Extension</option>
+<option>Ganesha Block</option>
+<option>Malur Hosur Road</option>
+<option>Lakshmipura Vidyaanyapura</option>
+<option>Hegganahalli</option>
+<option>Rajanna Layout</option>
+<option>Nagarbhavi  BDA Complex</option>
+<option>Gidada Konnenahalli</option>
+<option>Rahat Bagh</option>
+<option>Escorts Colony</option>
+<option>asha township, off hennur road</option>
+<option>1A Block Koramangala</option>
+<option>Near International Airport</option>
+<option>NTI Layout</option>
+<option>Fraser town</option>
+<option>Dasappa Layout</option>
+<option>Sonam Layout</option>
+<option>CR Layout</option>
+<option>BTM 4th Stage</option>
+<option>Arekempanahalli</option>
+<option>Chamundi Nagar</option>
+<option>MRCR Layout</option>
+<option>Shettihalli</option>
+<option>Gangondanahalli</option>
+<option>Ullal Road</option>
+<option>Hullahalli</option>
+<option>Jagajyothi layout</option>
+<option>Lakkasandra Extension</option>
+<option>Krishna Reddy Layout</option>
+<option>Kuvempu Layout</option>
+<option>Chickpet</option>
+<option>T G extension</option>
+<option>2nd Block Koramangala</option>
+<option>Devi Nagar</option>
+<option>GKW Layout</option>
+<option>Gandhi Nagar</option>
+<option>Jnana Ganga Nagar</option>
+<option>rr nagar</option>
+<option>Harohalli</option>
+<option>Stage-4 Bommanahalli</option>
+<option>Venkateshpuram</option>
+<option>Judicial Layout, Kanakapura Road, </option>
+<option>Mullur</option>
+<option>J.P.nagar 6th Phase.Sarakki Nagar</option>
+<option>Doddabele</option>
+<option>Sadahalli</option>
+<option>Sathya Layout</option>
+<option>5 Bedroom Farm House in Lakshmipura</option>
+<option>Shanti Nagar</option>
+<option>2nd Stage Arekere Mico Layout</option>
+<option>Jayamahal</option>
+<option>Veer Sandra</option>
+<option>Chennappa Layout</option>
+<option>RMV Extension Stage 2</option>
+<option>Sadanand Nagar</option>
+<option>Whietfield, </option>
+<option>BTM Layout 1stage 9th Main</option>
+<option>Lavakusha Nagar</option>
+<option>Vittal Mallya Road</option>
+<option>Dena Bank Colony</option>
+<option>Kadabagere</option>
+<option>1st Block HBR Layout</option>
+<option>High grounds</option>
+<option>Kothnoor Dinne</option>
+<option>Guddadahalli</option>
+<option>Vasanthpura</option>
+<option>Kasthuri Nagar East Of NGEF</option>
+<option>Chikka Gowdanapalya.</option>
+<option>TR Mill Road, Chamarajpet</option>
+<option>Nirman Layout</option>
+<option>Chokkahalli</option>
+<option>Telecom Layout</option>
+<option>Vikram Nagar</option>
+<option>Virupakshapura</option>
+<option>Muthyala Nagar</option>
+<option>Nrupathunga Nagar</option>
+<option>Coconut Grove Layout</option>
+<option>Amrita Nagar</option>
+<option>RR Layout</option>
+<option>Billapura</option>
+<option>KHB Colony Extension</option>
+<option>Anjana Nagar</option>
+<option>Subramanya Nagar</option>
+<option>Janatha Colony</option>
+<option>Veersandra</option>
+<option>Harsha Layout</option>
+<option>Tigalarpalya</option>
+<option>2nd Block Bel Layout</option>
+<option>sarjapura main road</option>
+<option>Anekal - Hosur Road</option>
+<option>Ramamurthy Nagar Extension</option>
+<option>2nd phase jp nagar, jp nagar</option>
+<option>Manonarayanapalya</option>
+<option>M V Extenstion</option>
+<option>Kamdhenu Nagar</option>
+<option>Ganganahalli</option>
+<option>Narayanappa Garden</option>
+<option>Rest House Road</option>
+<option>Ex-Servicemen Colony Dinnur Main Road R.T.Nagar</option>
+<option>Vijay Nagar</option>
+<option>CMH Road</option>
+<option>Ankappa Layout</option>
+<option>Neelasandra</option>
+<option>Yediyur</option>
+<option>Upadhyaya Layout</option>
+<option>bsk 6th stage 2ad block near sri conversation hall</option>
+<option>Annapoorneshwari Layout, JP nagar 7th phase</option>
+<option>Mudalpalaya</option>
+<option>elachenahalli</option>
+<option>B K Nagar</option>
+<option>Vivek Nagar</option>
+<option> Basavangudi</option>
+<option>Banashankari 6th stage , 2nd block</option>
+<option>KG Halli</option>
+<option>Cubbon Road</option>
+<option>Veerabhadra Nagar</option>
+<option>Vidhyanagar Cross</option>
+<option>6th Block Jayanagar</option>
+<option>Punappa Layout</option>
+<option>Pampa Extension</option>
+<option> Sector 1 HSR Layout</option>
+<option>Basaveswarnagar</option>
+<option>Jaymahal Road</option>
+<option>Nagarbhavi Garden Villas Layout</option>
+<option>Agrahara Dasarahalli</option>
+<option>T R Mill Road</option>
+<option>Indira Nagar Stage 2</option>
+<option>Hommadevanahalli</option>
+<option>BTM Layout 2nd Stage 1st Phase</option>
+<option>T C Palya main Road</option>
+<option>1 Immadihalli</option>
+<option>Navodaya Nagar</option>
+<option>Guni Agrahara</option>
+<option>Shankarapuram</option>
+<option>Shetty Halli</option>
+<option>AGB Layout</option>
+<option>Bilal Nagar</option>
+<option>Krishna Nagar</option>
+<option>Suryanagar</option>
+<option>Duvasapalya</option>
+<option>BCMC Layout</option>
+<option>Kengeri Satellite Town Stage II</option>
+<option>Church Street</option>
+<option>Uday Nagar</option>
+<option>Chaitanya Ananya</option>
+<option>Nagashetty Halli</option>
+<option>Byrasandra Extension</option>
+<option>Sri Sai Layout</option>
+<option>Devara Jeevanahalli</option>
+<option>SK Garden</option>
+<option>PNS Layout</option>
+<option>Electronic city Phase 1, </option>
+<option> Banaswadi</option>
+<option>Naidu Layout</option>
+<option>Sugama Layout</option>
+<option>Behind Don Bosco Church</option>
+<option>Anugrah Layout</option>
+<option>Bandepalya</option>
+<option>poornaprajna layout</option>
+<option>Annapurneshwari Nagar</option>
+<option>Somanna Garden</option>
+<option>RPC layout</option>
+<option>HSR Layout 7th sector, </option>
+<option>Bettadasanapura</option>
+<option>Gulimangala</option>
+<option>Addischetan Layout</option>
+<option>Konena Agrahara</option>
+<option>Raghavendra Layout</option>
+<option>Varsova Layout</option>
+<option>Bhattarahalli</option>
+<option>Bande Nallasandra</option>
+<option>HAL Layout</option>
+<option>Vidya Nagar</option>
+<option>Shingapura</option>
+<option>SHANTHINAGAR</option>
+<option>Jay an agar 4 T Block</option>
+<option>Satyasaibaba Layout</option>
+<option>Queens Road</option>
+<option>Koppa</option>
+<option>Jagadish Nagar</option>
+<option>3rd Phase Iti Layout</option>
+<option>Ananthapura, T C palaya Main Road</option>
+<option>Phase 1 Kammasandra</option>
+<option>Deepanjali Nagar</option>
+<option>SARJAPUR BAGALUR ROAD</option>
+<option>B Y Raveshwara Nagar</option>
+<option>KEB Colony</option>
+<option>HOSUR RMAIN ROAD</option>
+<option>Konappana Agrahara</option>
+<option>Rajasree Layout</option>
+<option>Vinayaka Layout</option>
+<option>Thirumalashettyhally</option>
+<option>Bharathnagar</option>
+<option>5th Block Jayanagar</option>
+<option>Jayanagar, </option>
+<option>Asthagrama Layout</option>
+<option>Rajarajesheari nagar</option>
+<option>Millers Road</option>
+<option>2nd Block Hbr Layout</option>
+<option>Madavara</option>
+<option>Dwaraka Nagar</option>
+<option>Garebhavipalya</option>
+<option>Neelamangala</option>
+<option>Banashankari 6th Stage</option>
+<option>Brindavan Layout</option>
+<option>Chambenahalli</option>
+<option>cooketown</option>
+<option>Kathriguppe IV Phase</option>
+<option>Ramchandrapuram</option>
+<option>1Hoysalanagar</option>
+<option>PC Palaya</option>
+<option>Soppahalli</option>
+<option>Aavalahalli</option>
+<option>Jayanti Nagar</option>
+<option>Virudhu Nagar</option>
+<option>kamanahalli main road</option>
+<option>7th Block Koramangala</option>
+<option>Prakash Nagar</option>
+<option>Bharat Nagar</option>
+<option>Ramanashree Enclave</option>
+<option>Yelahanka,MVIT college</option>
+<option>Chikku Lakshmaiah Layout</option>
+<option>Gnana Bharathi</option>
+<option>Pillahalli</option>
+<option>Ashok Nagar</option>
+<option>Gollarahatti</option>
+<option>Venkateswara Nagar</option>
+<option>Chikkagubbi</option>
+<option>Banashankari 2 nd Stage</option>
+<option>Kammagondahalli</option>
+<option>Nanjappa Layout Vidyaranyapura</option>
+<option>Rammana Layout</option>
+<option>Rajapura</option>
+<option>Raja Rajeshwari Nagara</option>
+<option>Govindapura</option>
+<option>Thirupalya</option>
+<option>Off Bannergatta road</option>
+<option>Hoskote near</option>
+<option>Haralur Road, </option>
+<option>Adugodi</option>
+<option>RK Colony</option>
+<option>2 Bedroom Furnished Farm House in Kolar Road</option>
+<option>kg halli jalhalli west</option>
+<option>Vasatha Vallbha Nagar</option>
+<option>BAGUR ROAD</option>
+<option>Balepet</option>
+<option>Annasandrapalya</option>
+<option>RMC YARD</option>
+<option>Panathur Road, </option>
+<option>Shanthi Pura</option>
+<option>Viviani Road</option>
+<option>Sampangirama Nagar</option>
+<option>Doctor Layout Rayasandra</option>
+<option>Anwar Layout</option>
+<option>Pillanna Gardens</option>
+<option>AECS LAYOUT A-BLOCK Singasandra</option>
+<option>Banashankari Stage I</option>
+<option>4th Block HBR Layout</option>
+<option>Michael Palaya</option>
+<option>RBI Layout</option>
+<option>Akash Nagar</option>
+<option>Shauhardha Layout</option>
+<option>Bhoopsandra</option>
+<option>Anathanagar</option>
+<option>vinayakanagar</option>
+<option>Jaraganahalli Jp Nagar Post</option>
+<option>adigondanhalli</option>
+<option>Kanakapura  Rod</option>
+<option>Richmond Road</option>
+<option>Postal Colony</option>
+<option>MEI layout, Bagalgunte</option>
+<option>Jeevanhalli</option>
+<option>Gubbi Cross, Hennur Main Road</option>
+<option>Sabari Nagar</option>
+<option>Ashraya Layout</option>
+<option>Arishinakunte</option>
+<option>Infantry Road</option>
+<option>Whitefield ECC Road</option>
+<option>Maruthi nagar kogilu</option>
+<option>Ayappa Nagar</option>
+<option>Billamaranahalli</option>
+<option>Prasanti Nagar</option>
+<option>Banasawadi, </option>
+<option>Sunkan palya</option>
+<option>Gayathri Nagar</option>
+<option>Old Mangammanapalya Road</option>
+<option>1Kasavanhalli</option>
+<option>Kanakapura Road, </option>
+<option>Hal old airport road</option>
+<option>arudi</option>
+<option>Anantapuram</option>
+<option>Javarandoddi</option>
+<option>Vijaypura</option>
+<option>Bapuji Nagar</option>
+<option>Amam Enclave Layout</option>
+<option>Allalasandra</option>
+<option>Ramanagara Channapatna</option>
+<option>Maheswari Nagar</option>
+<option>Hsr layout sector3</option>
+<option>Thyagraj Nagar</option>
+<option>Banagirinagar</option>
+<option>Medaralli</option>
+<option>Versova Layout</option>
+<option>Chikkajala</option>
+<option>Udayagiri</option>
+<option>pavitra paradise</option>
+<option>kadubisnahalli</option>
+<option>Rahmath Nagar</option>
+<option>Chikkanahalli</option>
+<option>Halanayakanahalli</option>
+<option>Park View Layout</option>
+<option>Xavier Layout</option>
+<option>Air View Colony</option>
+<option>akshaya nagar t c palya</option>
+<option>mvj engineering college</option>
+<option>Raja Rajashweri Nagar</option>
+<option>basaveshwarnagar</option>
+<option>Banashankari 3rd stage, Vivekanandanagar</option>
+<option>Annaiah Reddy Layout</option>
+<option>manyata</option>
+<option>LIC Colony</option>
+<option>Mallappa Layout</option>
+<option>3rd Stage Raja Rajeshwari Nagar</option>
+<option>Dominic Layout</option>
+<option>KAMAKIYA</option>
+<option>Wheelers Road</option>
+<option>MM Layout</option>
+<option>Devarabeesana Halli</option>
+<option>beml layout, basaveshwara nagar</option>
+<option>Sadhguru Layout</option>
+<option>Chikbasavanapura</option>
+<option>Chuchangatta Colony</option>
+<option>Hanuman Nagar</option>
+<option>Kengeri Satellite Town KHB Apartment</option>
+<option>Subhash Nagar</option>
+<option>Jogupalya</option>
+<option>Doddanakunte</option>
+<option>Duddanahalli</option>
+<option>Beml layout, Rajarajeshwari nagar</option>
+<option>Gulakamale</option>
+<option>Jakkasandra</option>
+<option>Chellikere</option>
+<option>Zuzuvadi</option>
+<option>Kanakapura main  Road</option>
+<option>Masjid e Alkareem</option>
+<option>Sindhi Colony</option>
+<option>Kanakapur main road</option>
+<option>Prasanna layout Herohalli</option>
+<option>Sarvobhogam Nagar</option>
+<option>Pattegarhpalya</option>
+<option>Tilak Nagar</option>
+<option>12th cross srinivas nagar banshankari 3rd stage</option>
+<option>Havanur extension</option>
+<option>Abshot Layout</option>  
+</select>         
+       </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <!-- <h3 class="h3-responsive">Strong mask</h3>
+          <p>Secondary text</p> -->
+          <div class="form-row">
+            <div class="col">
+              <label for="Area Type">Enter Area Type</label>
+              <!-- <input type="text" class="form-control" placeholder="Enter Area Type" value=""> -->
+              <select class="form-control" id="Area Type" name="area_type">
+              <option>Choose. .</option>
+              <option>Built-up Area</option>
+              <option>Carpet Area</option>
+              <option>Plot Area</option>
+              <option>Super Built-up Area</option>
+            </select>
+            </div>
+        </div>
+      </div>
+    </div>
+
+       
+               
+
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <div class="form-row">
+            <div class="col">
+              <label for="SquareFeet">Enter Area in SquareFeet</label>
+              <input type="text" class="form-control" placeholder="Enter SquareFeet" name="area_sqft">
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- Hall Kitchen -->
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <div class="form-row">
+            <div class="col">
+              <label for="hallKitchen">Enter no. of Hall & Kitchen</label>
+              <!-- <input type="text" class="form-control" placeholder="Enter Hall&Kitchen (either 1 or 0)" value=""> -->
+              <select class="form-control" id="hallKitchen" name="hallkitchen">
+              <option>choose. .</option>
+              <option>0</option>
+              <option>1</option>
+              </select>
+            </div>
+        </div>
+        </div>
+      </div>
+       
+       <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <div class="form-row">
+            <div class="col">
+              <label for="balconies">Enter Balcony</label>
+              <input type="text" id="balconies" class="form-control" placeholder="Enter Balcony" name="balconies">
+              
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="100%">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <div class="form-row">
+            <div class="col">
+              <!-- <input type="text" class="form-control" placeholder="Enter Bedrooms" value=""> -->
+              <label for="SelectBedroom">Enter Bedroom</label>
+              <select class="form-control" id="SelectBedroom" name="bedrooms">
+                <option>choose..</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+               <option>10</option>
+               <option>11</option>
+               <option>12</option>
+             </select>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="50%">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <div class="form-row">
+            <div class="col">
+              <label for="bathroom">Enter Bathroom</label>
+              <input type="text" id="bathroom" class="form-control" placeholder="Enter Bathroom" name="bathrooms">
+              <br>
+              <div class="col-xs-12 text-center wow fadeInUp">
+                  <input class="btn btn-primary btn-lg " style="height:50px; width: 200px ;padding:2px 30px" type="submit" value="Submit">
+
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </form>
+    </div>
+  
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+             
+         
+            <!-- </div> -->
+            </div><!--End Form row-->
+
+          </div>
+        </div>
+      </div>
+  
+    <!-- OUTPUT 
+    <p>the location is {{form.location}}</p> 
+    <p>the location is {{form.area_sqft}}</p>
+    <p>the location is {{form.bathrooms}}</p> -->
+    </body>
+    </html> 

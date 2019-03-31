@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<form method = "POST">
+		 {% csrf_token %}
+            <p>Location</p>
+            <input type="text" name="location" id="location" placeholder="Enter Location" required>
+            <p>Area Type</p>
+            <input type="text" name="area_type" id="area_type" placeholder="Enter Area Type" required>
+            <p>BedRooms</p>
+            <input type="number" name="bedrooms" id="bedrooms" placeholder="Enter No of Bedrooms" required>
+            <p>Hall&Kitchen</p>
+            <input type="number" name="hallkichen" id="hallkichen" placeholder="Enter Hall&Kitchen" required>
+            <p>Area in Sqft</p>
+            <input type="number" name="area_sqft" id="area_sqft" placeholder="Enter Area in sqft" required>
+            <p>Bathrooms</p>
+            <input type="number" name="bathrooms" id="bathrooms" placeholder="Enter no of Bathrooms" required>
+            <p>Balconies</p>
+            <input type="number" name="balconies" id="balconies" placeholder="Enter no of Balconies" required>
+            <input type="submit" name="" value="Submit">
+        </form>
+</body>
+</html>
