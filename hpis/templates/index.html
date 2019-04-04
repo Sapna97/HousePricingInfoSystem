@@ -52,38 +52,44 @@
 </head>
 
 <body>
-
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
     
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo"></a> -->
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="#pricing" class="scroll">Pricing</a></li> -->
-            <!-- <li><a href="#">Sign in</a></li> -->
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
+     
+     
         <!-- header begins -->
     <header>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col-xs-6">
-            <!-- <a href="index.html"><img src="img/logo.svg" alt="Logo"></a> -->
+            <a href="index.html"><img src="img/logo.svg" alt="Logo"></a> 
           </div>
           <div class="col-xs-6 signin text-right navbar-nav">
-            <!-- <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<a href="#">Sign in</a> -->
+           <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<a href="#">Sign in</a> 
           </div>
         </div>
-        
+         -->
+
         <div class="row header-info">
           <div class="col-sm-10 col-sm-offset-1 text-center">
             <h1 class="wow fadeIn" style="text-shadow: 2px 2px rgba(0,0,0,1); color: #ffffff">The Place to find the house of your dreams!!</h1>
@@ -94,14 +100,15 @@
               
             <div class="row">
               <!-- <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"> -->
-              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                 <div class="row">
-                  <!-- <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s"> -->
-                    <!-- <a href="#be-the-first" class="btn btn-secondary btn-lg scroll shadow">Search</a> -->
-                  <!-- </div> -->
-                  <div class="col-xs-12 wow fadeInUp" data-wow-delay="1.4s">
-                    <a href="#invite" class="btn btn-secondary btn-lg scroll shadow">Search</a>
+                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                    <a href="#invite" class="btn btn-secondary btn-lg scroll">Search</a>
                   </div>
+                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#be-the-first" class="btn btn-primary btn-lg scroll">Statistics</a>
+                  </div>
+                   
                 </div><!--End Button Row-->  
               </div>
             </div>
@@ -146,7 +153,7 @@
             {% csrf_token %}
       <div class="carousel-item active">
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" width="80%">
+          <img class="d-block w-100" src="{% static 'imgs/location.png' %}" alt="First slide" width="80%">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -155,7 +162,7 @@
           <!-- <form method="POST">
             {% csrf_token %} -->
           <div class="form-row">
-            <div class="col">
+            <div class="col" style="text-shadow: 1px 2px 3px rgba(0,0,0,1)">
               <label for="location">Enter Location</label>
               <!-- <input type="text" class="form-control" placeholder="Enter location" value=""> -->
               <select class="form-control" id="Selectlocation" name="location" >
@@ -1465,18 +1472,18 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <img class="d-block w-100"  src="{% static 'imgs/areatype.jpeg' %}" alt="Second slide" width="80%">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <!-- <h3 class="h3-responsive">Strong mask</h3>
           <p>Secondary text</p> -->
           <div class="form-row">
-            <div class="col">
+            <div class="col" style="text-shadow: 1px 2px 3px rgba(0,0,0,1)">
               <label for="Area Type">Enter Area Type</label>
               <!-- <input type="text" class="form-control" placeholder="Enter Area Type" value=""> -->
               <select class="form-control" id="Area Type" name="area_type">
-              <option>Choose. .</option>
+              <option>Choose...</option>
               <option>Built-up Area</option>
               <option>Carpet Area</option>
               <option>Plot Area</option>
@@ -1493,14 +1500,14 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <img class="d-block w-100" src="{% static 'imgs/areainsqft.jpg' %}" alt="Second slide" width="80%">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <div class="form-row">
-            <div class="col">
+            <div class="col" style="text-shadow: 2px 2px  3px rgb(0,0,0)">
               <label for="SquareFeet">Enter Area in SquareFeet</label>
-              <input type="text" class="form-control" placeholder="Enter SquareFeet" name="area_sqft">
+              <input type="text" class="form-control" placeholder="Enter SquareFeets" name="area_sqft">
             </div>
         </div>
         </div>
@@ -1509,16 +1516,16 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <img class="d-block w-100" src="{% static 'imgs/hallkitchen.jpg' %}" alt="Second slide" width="80%">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <div class="form-row">
-            <div class="col">
+            <div class="col" style="text-shadow: 1px 2px 3px rgba(0,0,0,1)">
               <label for="hallKitchen">Enter no. of Hall & Kitchen</label>
               <!-- <input type="text" class="form-control" placeholder="Enter Hall&Kitchen (either 1 or 0)" value=""> -->
               <select class="form-control" id="hallKitchen" name="hallkitchen">
-              <option>choose. .</option>
+              <option>Choose...</option>
               <option>0</option>
               <option>1</option>
               </select>
@@ -1530,13 +1537,13 @@
        <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="80%">
+          <img class="d-block w-100" src="{% static 'imgs/balcony.jpg' %}" alt="Second slide" width="80%">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <div class="form-row">
-            <div class="col">
-              <label for="balconies">Enter Balcony</label>
+            <div class="col" style="text-shadow: 1px 2px 3px rgba(0,0,0,1)">
+              <label for="balconies">Enter no. of Balconies</label>
               <input type="text" id="balconies" class="form-control" placeholder="Enter Balcony" name="balconies">
               
             </div>
@@ -1547,16 +1554,16 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="100%">
+          <img class="d-block w-100" src="{% static 'imgs/bedroom.jpeg' %}" alt="Second slide" width="100%">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <div class="form-row">
-            <div class="col">
+            <div class="col" style="text-shadow: 1px 2px 3px rgba(0,0,0,1)">
               <!-- <input type="text" class="form-control" placeholder="Enter Bedrooms" value=""> -->
-              <label for="SelectBedroom">Enter Bedroom</label>
+              <label for="SelectBedroom">Enter no. of  Bedrooms</label>
               <select class="form-control" id="SelectBedroom" name="bedrooms">
-                <option>choose..</option>
+                <option>Choose...</option>
                <option>1</option>
                <option>2</option>
                <option>3</option>
@@ -1578,13 +1585,13 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" width="50%">
+          <img class="d-block w-100" src="{% static 'imgs/bathroom.jpg' %}" alt="Second slide" width="50%">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
           <div class="form-row">
-            <div class="col">
-              <label for="bathroom">Enter Bathroom</label>
+            <div class="col" style="text-shadow: 1px 2px  3px rgba(0,0,0,1)">
+              <label for="bathroom">Enter no. of Bathrooms</label>
               <input type="text" id="bathroom" class="form-control" placeholder="Enter Bathroom" name="bathrooms">
               <br>
               <div class="col-xs-12 text-center wow fadeInUp">
