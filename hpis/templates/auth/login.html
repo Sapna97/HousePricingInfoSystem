@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+     <form method="POST">
+     	 {% csrf_token %}
+            <p>Username</p>
+            <input type="text" name="username" id="username" placeholder="Enter Username" required>
+            <p>Password</p>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
+            <input type="submit" name="" value="LOGIN">
+     </form>  
+     <p align="center" style="color:#C0392B"><font face="verdana">{{error}}</font></p>       
+</body>
+</html>
+
+
+
+
+
+         

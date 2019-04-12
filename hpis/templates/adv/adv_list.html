@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adv</title>
+</head>
+<body>
+{% for adv in advs %}
+        <div class="POST">
+            <h1><a href="{% url 'adv_detail' pk=adv.pk %}">{{ adv.title }}</a></h1>
+        </div>
+{% endfor %}            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    
